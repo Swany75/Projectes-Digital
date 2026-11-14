@@ -7,12 +7,12 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>A0</string>
-        </entry>
-        <entry>
           <string>rotation</string>
           <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>A0</string>
         </entry>
       </elementAttributes>
       <pos x="720" y="140"/>
@@ -21,12 +21,12 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>A1</string>
-        </entry>
-        <entry>
           <string>rotation</string>
           <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>A1</string>
         </entry>
       </elementAttributes>
       <pos x="680" y="140"/>
@@ -35,12 +35,12 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>B0</string>
-        </entry>
-        <entry>
           <string>rotation</string>
           <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>B0</string>
         </entry>
       </elementAttributes>
       <pos x="620" y="140"/>
@@ -49,12 +49,12 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>B1</string>
-        </entry>
-        <entry>
           <string>rotation</string>
           <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>B1</string>
         </entry>
       </elementAttributes>
       <pos x="580" y="140"/>
@@ -112,6 +112,50 @@
         </entry>
       </elementAttributes>
       <pos x="940" y="360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>S B1 B0 A1 A0 Y1 Y0
+0 0 0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 1 0 1 0
+0 0 0 1 1 1 0
+0 0 1 0 0 0 1
+0 0 1 0 1 0 1
+0 0 1 1 0 1 1
+0 0 1 1 1 1 1
+0 1 0 0 0 0 0
+0 1 0 0 1 0 0
+0 1 0 1 0 1 0
+0 1 0 1 1 1 0
+0 1 1 0 0 0 1
+0 1 1 0 1 0 1
+0 1 1 1 0 1 1
+0 1 1 1 1 1 1
+1 0 0 0 0 0 0
+1 0 0 0 1 0 1
+1 0 0 1 0 0 0
+1 0 0 1 1 0 1
+1 0 1 0 0 0 0
+1 0 1 0 1 0 1
+1 0 1 1 0 0 0
+1 0 1 1 1 0 1
+1 1 0 0 0 1 0
+1 1 0 0 1 1 1
+1 1 0 1 0 1 0
+1 1 0 1 1 1 1
+1 1 1 0 0 1 0
+1 1 1 0 1 1 1
+1 1 1 1 0 1 0
+1 1 1 1 1 1 1</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="800" y="120"/>
     </visualElement>
   </visualElements>
   <wires>
