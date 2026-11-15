@@ -41,7 +41,7 @@
           <string>R0</string>
         </entry>
       </elementAttributes>
-      <pos x="1200" y="380"/>
+      <pos x="1380" y="380"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -51,7 +51,7 @@
           <string>R1</string>
         </entry>
       </elementAttributes>
-      <pos x="1200" y="460"/>
+      <pos x="1380" y="460"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -61,7 +61,7 @@
           <string>R2</string>
         </entry>
       </elementAttributes>
-      <pos x="1200" y="540"/>
+      <pos x="1380" y="540"/>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
@@ -96,17 +96,17 @@
     <visualElement>
       <elementName>FA.dig</elementName>
       <elementAttributes/>
-      <pos x="1060" y="540"/>
+      <pos x="1100" y="540"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>C</string>
+          <string>R3</string>
         </entry>
       </elementAttributes>
-      <pos x="1200" y="580"/>
+      <pos x="1380" y="600"/>
     </visualElement>
     <visualElement>
       <elementName>Const</elementName>
@@ -136,27 +136,41 @@
           <long>0</long>
         </entry>
       </elementAttributes>
-      <pos x="1020" y="580"/>
+      <pos x="1060" y="580"/>
     </visualElement>
     <visualElement>
       <elementName>Testcase</elementName>
       <elementAttributes>
         <entry>
+          <string>Label</string>
+          <string>TEST</string>
+        </entry>
+        <entry>
           <string>Testdata</string>
           <testData>
-            <dataString>A2 A1 A0 R2 R1 R0 C
-0  0  0  0  0  0  1
-0  0  1  1  1  1  0
-0  1  0  1  1  0  0
-0  1  1  1  0  1  0
-1  0  0  1  0  0  0
-1  0  1  0  1  1  0
-1  1  0  0  1  0  0
-1  1  1  0  0  1  0</dataString>
+            <dataString>A2 A1 A0 R2 R1 R0 R3
+0 0 0 0 0 0 0
+0 0 1 1 1 1 0
+0 1 0 1 1 0 0
+0 1 1 1 0 1 0
+1 0 0 1 0 0 1
+1 0 1 0 1 1 0
+1 1 0 0 1 0 0
+1 1 1 0 0 1 0</dataString>
           </testData>
         </entry>
       </elementAttributes>
       <pos x="940" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>XOr</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="1240" y="580"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -178,11 +192,11 @@
     </wire>
     <wire>
       <p1 x="1040" y="560"/>
-      <p2 x="1060" y="560"/>
+      <p2 x="1100" y="560"/>
     </wire>
     <wire>
-      <p1 x="1120" y="560"/>
-      <p2 x="1160" y="560"/>
+      <p1 x="1160" y="560"/>
+      <p2 x="1200" y="560"/>
     </wire>
     <wire>
       <p1 x="800" y="340"/>
@@ -197,12 +211,16 @@
       <p2 x="960" y="500"/>
     </wire>
     <wire>
-      <p1 x="1020" y="580"/>
-      <p2 x="1060" y="580"/>
+      <p1 x="1060" y="580"/>
+      <p2 x="1100" y="580"/>
     </wire>
     <wire>
-      <p1 x="1160" y="580"/>
-      <p2 x="1200" y="580"/>
+      <p1 x="1200" y="580"/>
+      <p2 x="1240" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="1320" y="600"/>
+      <p2 x="1380" y="600"/>
     </wire>
     <wire>
       <p1 x="700" y="540"/>
@@ -210,11 +228,11 @@
     </wire>
     <wire>
       <p1 x="780" y="540"/>
-      <p2 x="1060" y="540"/>
+      <p2 x="1100" y="540"/>
     </wire>
     <wire>
-      <p1 x="1120" y="540"/>
-      <p2 x="1200" y="540"/>
+      <p1 x="1160" y="540"/>
+      <p2 x="1380" y="540"/>
     </wire>
     <wire>
       <p1 x="700" y="460"/>
@@ -226,7 +244,7 @@
     </wire>
     <wire>
       <p1 x="1020" y="460"/>
-      <p2 x="1200" y="460"/>
+      <p2 x="1380" y="460"/>
     </wire>
     <wire>
       <p1 x="700" y="380"/>
@@ -234,23 +252,31 @@
     </wire>
     <wire>
       <p1 x="920" y="380"/>
-      <p2 x="1200" y="380"/>
+      <p2 x="1380" y="380"/>
     </wire>
     <wire>
       <p1 x="780" y="380"/>
       <p2 x="860" y="380"/>
     </wire>
     <wire>
+      <p1 x="1040" y="620"/>
+      <p2 x="1240" y="620"/>
+    </wire>
+    <wire>
       <p1 x="1040" y="480"/>
       <p2 x="1040" y="560"/>
     </wire>
     <wire>
-      <p1 x="820" y="340"/>
-      <p2 x="820" y="400"/>
+      <p1 x="1040" y="560"/>
+      <p2 x="1040" y="620"/>
     </wire>
     <wire>
-      <p1 x="1160" y="560"/>
-      <p2 x="1160" y="580"/>
+      <p1 x="1200" y="560"/>
+      <p2 x="1200" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="820" y="340"/>
+      <p2 x="820" y="400"/>
     </wire>
     <wire>
       <p1 x="940" y="400"/>
