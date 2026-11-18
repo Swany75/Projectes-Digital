@@ -266,7 +266,7 @@
           </testData>
         </entry>
       </elementAttributes>
-      <pos x="580" y="380"/>
+      <pos x="440" y="380"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>

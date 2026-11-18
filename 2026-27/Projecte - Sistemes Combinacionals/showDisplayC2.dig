@@ -290,6 +290,26 @@
       </elementAttributes>
       <pos x="240" y="860"/>
     </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>R2 R1 R0 A B C D E F G H
+0 0 0 1 1 1 1 1 1 0 0
+0 0 1 0 1 1 0 0 0 0 0
+0 1 0 1 1 0 1 1 0 1 0
+0 1 1 1 1 1 1 0 0 1 0
+1 0 0 0 1 1 0 0 1 1 0
+1 0 1 1 1 1 1 0 0 1 0
+1 1 0 1 1 0 1 1 0 1 0
+1 1 1 0 1 1 0 0 0 0 0</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="220" y="180"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
