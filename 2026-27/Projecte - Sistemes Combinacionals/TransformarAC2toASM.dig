@@ -119,10 +119,6 @@
       <elementName>Testcase</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>TEST</string>
-        </entry>
-        <entry>
           <string>Testdata</string>
           <testData>
             <dataString>A2 A1 A0 R3 R2 R1 R0
