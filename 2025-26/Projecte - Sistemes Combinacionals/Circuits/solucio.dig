@@ -96,7 +96,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>Signo / U3</string>
+          <string>U3</string>
         </entry>
       </elementAttributes>
       <pos x="400" y="100"/>
@@ -136,7 +136,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>Signo / V3</string>
+          <string>V3</string>
         </entry>
       </elementAttributes>
       <pos x="400" y="680"/>
@@ -200,7 +200,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>Signo / C4</string>
+          <string>C4</string>
         </entry>
       </elementAttributes>
       <pos x="720" y="-40"/>
@@ -250,7 +250,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>Signo / D4</string>
+          <string>D4</string>
         </entry>
       </elementAttributes>
       <pos x="720" y="840"/>
@@ -351,7 +351,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>Y</string>
+          <string>LED VERIFICAT</string>
         </entry>
       </elementAttributes>
       <pos x="1320" y="300"/>
@@ -368,7 +368,12 @@
     </visualElement>
     <visualElement>
       <elementName>Seven-Seg</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Usuari 1</string>
+        </entry>
+      </elementAttributes>
       <pos x="1260" y="20"/>
     </visualElement>
     <visualElement>
@@ -383,7 +388,12 @@
     </visualElement>
     <visualElement>
       <elementName>Seven-Seg</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Usuari 2</string>
+        </entry>
+      </elementAttributes>
       <pos x="1260" y="460"/>
     </visualElement>
     <visualElement>
@@ -410,6 +420,59 @@
       <elementName>5Bit-AdderSM.dig</elementName>
       <elementAttributes/>
       <pos x="620" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>VERIFICAT</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1320" y="360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>U3 U2 U1 U0 V3 V2 V1 V0 C4 C3 C2 C1 C0 D4 D3 D2 D1 D0 YU YV YC YD VERIFICAT
+# ROM: U = 1110 (-6), V = 0010 (+2)  -&gt;  codi compartit = -4 = 10100
+# cap codi correcte
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+# nomes U correcte
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+# nomes V correcte
+0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0
+# personals correctes, compartits no
+1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0
+# U i C correctes, D no
+1 1 1 0 0 0 1 0 1 0 1 0 0 0 0 0 0 0 1 1 1 0 0
+# V i D correctes, C no
+1 1 1 0 0 0 1 0 0 0 0 0 0 1 0 1 0 0 1 1 0 1 0
+# tot correcte -&gt; VERIFICAT
+1 1 1 0 0 0 1 0 1 0 1 0 0 1 0 1 0 0 1 1 1 1 1
+# compartits correctes pero personals no
+0 0 0 0 0 0 0 0 1 0 1 0 0 1 0 1 0 0 0 0 1 1 0
+# U amb signe canviat (+6)
+0 1 1 0 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 1 1 1 0
+# V amb signe canviat (-2)
+1 1 1 0 1 0 1 0 1 0 1 0 0 1 0 1 0 0 1 0 1 1 0
+# C amb signe canviat (+4)
+1 1 1 0 0 0 1 0 0 0 1 0 0 1 0 1 0 0 1 1 0 1 0
+# D = +8 (suma de magnituds)
+1 1 1 0 0 0 1 0 1 0 1 0 0 0 1 0 0 0 1 1 1 0 0
+# C = D = -8 (incorrecte)
+1 1 1 0 0 0 1 0 1 1 0 0 0 1 1 0 0 0 1 1 0 0 0
+# -0 personal i +-0 compartit (tots incorrectes)
+1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+# U = -7 incorrecte
+1 1 1 1 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 1 1 1 0</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="-320"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -752,10 +815,6 @@
     <wire>
       <p1 x="680" y="300"/>
       <p2 x="840" y="300"/>
-    </wire>
-    <wire>
-      <p1 x="1180" y="300"/>
-      <p2 x="1320" y="300"/>
     </wire>
     <wire>
       <p1 x="1200" y="620"/>
@@ -1168,6 +1227,22 @@
     <wire>
       <p1 x="440" y="400"/>
       <p2 x="440" y="520"/>
+    </wire>
+    <wire>
+      <p1 x="1180" y="300"/>
+      <p2 x="1260" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="1260" y="300"/>
+      <p2 x="1320" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="1260" y="300"/>
+      <p2 x="1260" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="1260" y="360"/>
+      <p2 x="1320" y="360"/>
     </wire>
   </wires>
   <measurementOrdering/>

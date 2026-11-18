@@ -68,7 +68,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>A &lt; B</string>
+          <string>MENOR</string>
         </entry>
       </elementAttributes>
       <pos x="1260" y="300"/>
@@ -78,7 +78,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>A = B</string>
+          <string>IGUAL</string>
         </entry>
       </elementAttributes>
       <pos x="1260" y="360"/>
@@ -88,10 +88,26 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>A &gt; B</string>
+          <string>MAJOR</string>
         </entry>
       </elementAttributes>
       <pos x="1260" y="420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>A B IGUAL MAJOR MENOR
+0 0 1 0 0
+0 1 0 0 1
+1 0 0 1 0
+1 1 1 0 0</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="680" y="160"/>
     </visualElement>
   </visualElements>
   <wires>
