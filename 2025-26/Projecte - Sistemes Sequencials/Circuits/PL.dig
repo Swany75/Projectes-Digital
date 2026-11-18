@@ -210,6 +210,75 @@
       </elementAttributes>
       <pos x="900" y="620"/>
     </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>X2 X1 X0 Q2 Q1 Q0 PL
+# Codificacio: 000 res, 001 Cdw, 010 Cup, 011 Pdw manual, 100 Pup manual, 101 Pdw auto, 110 Pup auto (111 no es dona)
+0 0 0 0 0 0 0
+0 0 0 0 0 1 0
+0 0 0 0 1 0 0
+0 0 0 0 1 1 0
+0 0 0 1 0 0 0
+0 0 0 1 0 1 0
+0 0 0 1 1 0 0
+0 0 0 1 1 1 0
+0 0 1 0 0 0 0
+0 0 1 0 0 1 0
+0 0 1 0 1 0 0
+0 0 1 0 1 1 0
+0 0 1 1 0 0 0
+0 0 1 1 0 1 0
+0 0 1 1 1 0 0
+0 0 1 1 1 1 0
+0 1 0 0 0 0 0
+0 1 0 0 0 1 0
+0 1 0 0 1 0 0
+0 1 0 0 1 1 0
+0 1 0 1 0 0 0
+0 1 0 1 0 1 0
+0 1 0 1 1 0 0
+0 1 0 1 1 1 0
+0 1 1 0 0 0 1
+0 1 1 0 0 1 1
+0 1 1 0 1 0 1
+0 1 1 0 1 1 1
+0 1 1 1 0 0 0
+0 1 1 1 0 1 0
+0 1 1 1 1 0 0
+0 1 1 1 1 1 0
+1 0 0 0 0 0 0
+1 0 0 0 0 1 0
+1 0 0 0 1 0 0
+1 0 0 0 1 1 0
+1 0 0 1 0 0 1
+1 0 0 1 0 1 1
+1 0 0 1 1 0 1
+1 0 0 1 1 1 1
+1 0 1 0 0 0 1
+1 0 1 0 0 1 1
+1 0 1 0 1 0 1
+1 0 1 0 1 1 1
+1 0 1 1 0 0 0
+1 0 1 1 0 1 0
+1 0 1 1 1 0 0
+1 0 1 1 1 1 0
+1 1 0 0 0 0 0
+1 1 0 0 0 1 0
+1 1 0 0 1 0 0
+1 1 0 0 1 1 0
+1 1 0 1 0 0 1
+1 1 0 1 0 1 1
+1 1 0 1 1 0 1
+1 1 0 1 1 1 1</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="140"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
@@ -281,10 +350,6 @@
       <p2 x="900" y="500"/>
     </wire>
     <wire>
-      <p1 x="740" y="660"/>
-      <p2 x="900" y="660"/>
-    </wire>
-    <wire>
       <p1 x="380" y="440"/>
       <p2 x="780" y="440"/>
     </wire>
@@ -307,10 +372,6 @@
     <wire>
       <p1 x="740" y="300"/>
       <p2 x="740" y="340"/>
-    </wire>
-    <wire>
-      <p1 x="740" y="380"/>
-      <p2 x="740" y="660"/>
     </wire>
     <wire>
       <p1 x="1000" y="480"/>
@@ -379,6 +440,14 @@
     <wire>
       <p1 x="700" y="260"/>
       <p2 x="700" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="500" y="380"/>
+      <p2 x="500" y="660"/>
+    </wire>
+    <wire>
+      <p1 x="500" y="660"/>
+      <p2 x="900" y="660"/>
     </wire>
   </wires>
   <measurementOrdering/>

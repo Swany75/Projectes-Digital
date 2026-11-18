@@ -171,6 +171,436 @@
       </elementAttributes>
       <pos x="560" y="1660"/>
     </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>X2 X1 X0 CLK Q2 Q1 Q0 PL CL
+# Recorregut que passa per les 56 transicions (8 estats x 7 entrades). Estat inicial: plat 1, pinyo 1
+# plat 1, pinyo 1 + Cdw -&gt; plat 1, pinyo 1 (PINYO_LIMIT)
+0 0 1 0 0 0 0 0 1
+0 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + cap boto -&gt; plat 1, pinyo 1
+0 0 0 0 0 0 0 0 0
+0 0 0 C 0 0 0 X X
+# plat 1, pinyo 1 + Pup automatic -&gt; plat 2, pinyo 2
+1 1 0 0 0 0 0 0 0
+1 1 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Pup manual -&gt; plat 2, pinyo 2 (PLAT_LIMIT)
+1 0 0 0 1 0 1 1 0
+1 0 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Pdw automatic -&gt; plat 1, pinyo 1
+1 0 1 0 1 0 1 0 0
+1 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Cup -&gt; plat 1, pinyo 2
+0 1 0 0 0 0 0 0 0
+0 1 0 C 0 0 1 X X
+# plat 1, pinyo 2 + cap boto -&gt; plat 1, pinyo 2
+0 0 0 0 0 0 1 0 0
+0 0 0 C 0 0 1 X X
+# plat 1, pinyo 2 + Pdw automatic -&gt; plat 1, pinyo 1 (PLAT_LIMIT)
+1 0 1 0 0 0 1 1 0
+1 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Pdw automatic -&gt; plat 1, pinyo 1 (PLAT_LIMIT) (PINYO_LIMIT)
+1 0 1 0 0 0 0 1 1
+1 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Pdw manual -&gt; plat 1, pinyo 1 (PLAT_LIMIT)
+0 1 1 0 0 0 0 1 0
+0 1 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Pup manual -&gt; plat 2, pinyo 1
+1 0 0 0 0 0 0 0 0
+1 0 0 C 1 0 0 X X
+# plat 2, pinyo 1 + Pdw manual -&gt; plat 1, pinyo 1
+0 1 1 0 1 0 0 0 0
+0 1 1 C 0 0 0 X X
+# plat 1, pinyo 1 + cap boto -&gt; plat 1, pinyo 1
+0 0 0 0 0 0 0 0 0
+0 0 0 C 0 0 0 X X
+# plat 1, pinyo 1 + Cdw -&gt; plat 1, pinyo 1 (PINYO_LIMIT)
+0 0 1 0 0 0 0 0 1
+0 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + cap boto -&gt; plat 1, pinyo 1
+0 0 0 0 0 0 0 0 0
+0 0 0 C 0 0 0 X X
+# plat 1, pinyo 1 + Pup manual -&gt; plat 2, pinyo 1
+1 0 0 0 0 0 0 0 0
+1 0 0 C 1 0 0 X X
+# plat 2, pinyo 1 + Cup -&gt; plat 2, pinyo 2
+0 1 0 0 1 0 0 0 0
+0 1 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Pup automatic -&gt; plat 2, pinyo 3 (PLAT_LIMIT)
+1 1 0 0 1 0 1 1 0
+1 1 0 C 1 1 0 X X
+# plat 2, pinyo 3 + Cup -&gt; plat 2, pinyo 4
+0 1 0 0 1 1 0 0 0
+0 1 0 C 1 1 1 X X
+# plat 2, pinyo 4 + Pdw automatic -&gt; plat 1, pinyo 3
+1 0 1 0 1 1 1 0 0
+1 0 1 C 0 1 0 X X
+# plat 1, pinyo 3 + Pup manual -&gt; plat 2, pinyo 3
+1 0 0 0 0 1 0 0 0
+1 0 0 C 1 1 0 X X
+# plat 2, pinyo 3 + Cdw -&gt; plat 2, pinyo 2
+0 0 1 0 1 1 0 0 0
+0 0 1 C 1 0 1 X X
+# plat 2, pinyo 2 + cap boto -&gt; plat 2, pinyo 2
+0 0 0 0 1 0 1 0 0
+0 0 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Pdw manual -&gt; plat 1, pinyo 2
+0 1 1 0 1 0 1 0 0
+0 1 1 C 0 0 1 X X
+# plat 1, pinyo 2 + Pup automatic -&gt; plat 2, pinyo 3
+1 1 0 0 0 0 1 0 0
+1 1 0 C 1 1 0 X X
+# plat 2, pinyo 3 + Pup manual -&gt; plat 2, pinyo 3 (PLAT_LIMIT)
+1 0 0 0 1 1 0 1 0
+1 0 0 C 1 1 0 X X
+# plat 2, pinyo 3 + Pup automatic -&gt; plat 2, pinyo 4 (PLAT_LIMIT)
+1 1 0 0 1 1 0 1 0
+1 1 0 C 1 1 1 X X
+# plat 2, pinyo 4 + Cdw -&gt; plat 2, pinyo 3
+0 0 1 0 1 1 1 0 0
+0 0 1 C 1 1 0 X X
+# plat 2, pinyo 3 + Pdw automatic -&gt; plat 1, pinyo 2
+1 0 1 0 1 1 0 0 0
+1 0 1 C 0 0 1 X X
+# plat 1, pinyo 2 + Cdw -&gt; plat 1, pinyo 1
+0 0 1 0 0 0 1 0 0
+0 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Pup manual -&gt; plat 2, pinyo 1
+1 0 0 0 0 0 0 0 0
+1 0 0 C 1 0 0 X X
+# plat 2, pinyo 1 + Pdw automatic -&gt; plat 1, pinyo 1 (PINYO_LIMIT)
+1 0 1 0 1 0 0 0 1
+1 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Cup -&gt; plat 1, pinyo 2
+0 1 0 0 0 0 0 0 0
+0 1 0 C 0 0 1 X X
+# plat 1, pinyo 2 + Pdw manual -&gt; plat 1, pinyo 2 (PLAT_LIMIT)
+0 1 1 0 0 0 1 1 0
+0 1 1 C 0 0 1 X X
+# plat 1, pinyo 2 + Cup -&gt; plat 1, pinyo 3
+0 1 0 0 0 0 1 0 0
+0 1 0 C 0 1 0 X X
+# plat 1, pinyo 3 + Pdw manual -&gt; plat 1, pinyo 3 (PLAT_LIMIT)
+0 1 1 0 0 1 0 1 0
+0 1 1 C 0 1 0 X X
+# plat 1, pinyo 3 + Cup -&gt; plat 1, pinyo 4
+0 1 0 0 0 1 0 0 0
+0 1 0 C 0 1 1 X X
+# plat 1, pinyo 4 + Pdw manual -&gt; plat 1, pinyo 4 (PLAT_LIMIT)
+0 1 1 0 0 1 1 1 0
+0 1 1 C 0 1 1 X X
+# plat 1, pinyo 4 + Pup automatic -&gt; plat 2, pinyo 4 (PINYO_LIMIT)
+1 1 0 0 0 1 1 0 1
+1 1 0 C 1 1 1 X X
+# plat 2, pinyo 4 + Pup automatic -&gt; plat 2, pinyo 4 (PLAT_LIMIT) (PINYO_LIMIT)
+1 1 0 0 1 1 1 1 1
+1 1 0 C 1 1 1 X X
+# plat 2, pinyo 4 + Pdw manual -&gt; plat 1, pinyo 4
+0 1 1 0 1 1 1 0 0
+0 1 1 C 0 1 1 X X
+# plat 1, pinyo 4 + Cup -&gt; plat 1, pinyo 4 (PINYO_LIMIT)
+0 1 0 0 0 1 1 0 1
+0 1 0 C 0 1 1 X X
+# plat 1, pinyo 4 + Pdw automatic -&gt; plat 1, pinyo 3 (PLAT_LIMIT)
+1 0 1 0 0 1 1 1 0
+1 0 1 C 0 1 0 X X
+# plat 1, pinyo 3 + cap boto -&gt; plat 1, pinyo 3
+0 0 0 0 0 1 0 0 0
+0 0 0 C 0 1 0 X X
+# plat 1, pinyo 3 + Pdw manual -&gt; plat 1, pinyo 3 (PLAT_LIMIT)
+0 1 1 0 0 1 0 1 0
+0 1 1 C 0 1 0 X X
+# plat 1, pinyo 3 + Cdw -&gt; plat 1, pinyo 2
+0 0 1 0 0 1 0 0 0
+0 0 1 C 0 0 1 X X
+# plat 1, pinyo 2 + Pup manual -&gt; plat 2, pinyo 2
+1 0 0 0 0 0 1 0 0
+1 0 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Cup -&gt; plat 2, pinyo 3
+0 1 0 0 1 0 1 0 0
+0 1 0 C 1 1 0 X X
+# plat 2, pinyo 3 + Pdw manual -&gt; plat 1, pinyo 3
+0 1 1 0 1 1 0 0 0
+0 1 1 C 0 1 0 X X
+# plat 1, pinyo 3 + Cup -&gt; plat 1, pinyo 4
+0 1 0 0 0 1 0 0 0
+0 1 0 C 0 1 1 X X
+# plat 1, pinyo 4 + Cdw -&gt; plat 1, pinyo 3
+0 0 1 0 0 1 1 0 0
+0 0 1 C 0 1 0 X X
+# plat 1, pinyo 3 + Pdw automatic -&gt; plat 1, pinyo 2 (PLAT_LIMIT)
+1 0 1 0 0 1 0 1 0
+1 0 1 C 0 0 1 X X
+# plat 1, pinyo 2 + Pdw manual -&gt; plat 1, pinyo 2 (PLAT_LIMIT)
+0 1 1 0 0 0 1 1 0
+0 1 1 C 0 0 1 X X
+# plat 1, pinyo 2 + cap boto -&gt; plat 1, pinyo 2
+0 0 0 0 0 0 1 0 0
+0 0 0 C 0 0 1 X X
+# plat 1, pinyo 2 + Cdw -&gt; plat 1, pinyo 1
+0 0 1 0 0 0 1 0 0
+0 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Pup automatic -&gt; plat 2, pinyo 2
+1 1 0 0 0 0 0 0 0
+1 1 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Cdw -&gt; plat 2, pinyo 1
+0 0 1 0 1 0 1 0 0
+0 0 1 C 1 0 0 X X
+# plat 2, pinyo 1 + Pup automatic -&gt; plat 2, pinyo 2 (PLAT_LIMIT)
+1 1 0 0 1 0 0 1 0
+1 1 0 C 1 0 1 X X
+# plat 2, pinyo 2 + cap boto -&gt; plat 2, pinyo 2
+0 0 0 0 1 0 1 0 0
+0 0 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Cdw -&gt; plat 2, pinyo 1
+0 0 1 0 1 0 1 0 0
+0 0 1 C 1 0 0 X X
+# plat 2, pinyo 1 + Pup manual -&gt; plat 2, pinyo 1 (PLAT_LIMIT)
+1 0 0 0 1 0 0 1 0
+1 0 0 C 1 0 0 X X
+# plat 2, pinyo 1 + cap boto -&gt; plat 2, pinyo 1
+0 0 0 0 1 0 0 0 0
+0 0 0 C 1 0 0 X X
+# plat 2, pinyo 1 + Pup automatic -&gt; plat 2, pinyo 2 (PLAT_LIMIT)
+1 1 0 0 1 0 0 1 0
+1 1 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Pup manual -&gt; plat 2, pinyo 2 (PLAT_LIMIT)
+1 0 0 0 1 0 1 1 0
+1 0 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Cup -&gt; plat 2, pinyo 3
+0 1 0 0 1 0 1 0 0
+0 1 0 C 1 1 0 X X
+# plat 2, pinyo 3 + cap boto -&gt; plat 2, pinyo 3
+0 0 0 0 1 1 0 0 0
+0 0 0 C 1 1 0 X X
+# plat 2, pinyo 3 + Pdw automatic -&gt; plat 1, pinyo 2
+1 0 1 0 1 1 0 0 0
+1 0 1 C 0 0 1 X X
+# plat 1, pinyo 2 + Pdw manual -&gt; plat 1, pinyo 2 (PLAT_LIMIT)
+0 1 1 0 0 0 1 1 0
+0 1 1 C 0 0 1 X X
+# plat 1, pinyo 2 + Cdw -&gt; plat 1, pinyo 1
+0 0 1 0 0 0 1 0 0
+0 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Cdw -&gt; plat 1, pinyo 1 (PINYO_LIMIT)
+0 0 1 0 0 0 0 0 1
+0 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + cap boto -&gt; plat 1, pinyo 1
+0 0 0 0 0 0 0 0 0
+0 0 0 C 0 0 0 X X
+# plat 1, pinyo 1 + Cdw -&gt; plat 1, pinyo 1 (PINYO_LIMIT)
+0 0 1 0 0 0 0 0 1
+0 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Cdw -&gt; plat 1, pinyo 1 (PINYO_LIMIT)
+0 0 1 0 0 0 0 0 1
+0 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Cdw -&gt; plat 1, pinyo 1 (PINYO_LIMIT)
+0 0 1 0 0 0 0 0 1
+0 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Pdw automatic -&gt; plat 1, pinyo 1 (PLAT_LIMIT) (PINYO_LIMIT)
+1 0 1 0 0 0 0 1 1
+1 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Cdw -&gt; plat 1, pinyo 1 (PINYO_LIMIT)
+0 0 1 0 0 0 0 0 1
+0 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + cap boto -&gt; plat 1, pinyo 1
+0 0 0 0 0 0 0 0 0
+0 0 0 C 0 0 0 X X
+# plat 1, pinyo 1 + Pdw manual -&gt; plat 1, pinyo 1 (PLAT_LIMIT)
+0 1 1 0 0 0 0 1 0
+0 1 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Pup automatic -&gt; plat 2, pinyo 2
+1 1 0 0 0 0 0 0 0
+1 1 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Pup manual -&gt; plat 2, pinyo 2 (PLAT_LIMIT)
+1 0 0 0 1 0 1 1 0
+1 0 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Cdw -&gt; plat 2, pinyo 1
+0 0 1 0 1 0 1 0 0
+0 0 1 C 1 0 0 X X
+# plat 2, pinyo 1 + Cdw -&gt; plat 2, pinyo 1 (PINYO_LIMIT)
+0 0 1 0 1 0 0 0 1
+0 0 1 C 1 0 0 X X
+# plat 2, pinyo 1 + Cdw -&gt; plat 2, pinyo 1 (PINYO_LIMIT)
+0 0 1 0 1 0 0 0 1
+0 0 1 C 1 0 0 X X
+# plat 2, pinyo 1 + Pdw manual -&gt; plat 1, pinyo 1
+0 1 1 0 1 0 0 0 0
+0 1 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Pup manual -&gt; plat 2, pinyo 1
+1 0 0 0 0 0 0 0 0
+1 0 0 C 1 0 0 X X
+# plat 2, pinyo 1 + Cup -&gt; plat 2, pinyo 2
+0 1 0 0 1 0 0 0 0
+0 1 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Pup manual -&gt; plat 2, pinyo 2 (PLAT_LIMIT)
+1 0 0 0 1 0 1 1 0
+1 0 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Pup manual -&gt; plat 2, pinyo 2 (PLAT_LIMIT)
+1 0 0 0 1 0 1 1 0
+1 0 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Cup -&gt; plat 2, pinyo 3
+0 1 0 0 1 0 1 0 0
+0 1 0 C 1 1 0 X X
+# plat 2, pinyo 3 + Cdw -&gt; plat 2, pinyo 2
+0 0 1 0 1 1 0 0 0
+0 0 1 C 1 0 1 X X
+# plat 2, pinyo 2 + Pdw automatic -&gt; plat 1, pinyo 1
+1 0 1 0 1 0 1 0 0
+1 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Pup automatic -&gt; plat 2, pinyo 2
+1 1 0 0 0 0 0 0 0
+1 1 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Pup manual -&gt; plat 2, pinyo 2 (PLAT_LIMIT)
+1 0 0 0 1 0 1 1 0
+1 0 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Pup manual -&gt; plat 2, pinyo 2 (PLAT_LIMIT)
+1 0 0 0 1 0 1 1 0
+1 0 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Pdw automatic -&gt; plat 1, pinyo 1
+1 0 1 0 1 0 1 0 0
+1 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Pdw automatic -&gt; plat 1, pinyo 1 (PLAT_LIMIT) (PINYO_LIMIT)
+1 0 1 0 0 0 0 1 1
+1 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Pdw automatic -&gt; plat 1, pinyo 1 (PLAT_LIMIT) (PINYO_LIMIT)
+1 0 1 0 0 0 0 1 1
+1 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + cap boto -&gt; plat 1, pinyo 1
+0 0 0 0 0 0 0 0 0
+0 0 0 C 0 0 0 X X
+# plat 1, pinyo 1 + Pdw manual -&gt; plat 1, pinyo 1 (PLAT_LIMIT)
+0 1 1 0 0 0 0 1 0
+0 1 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Pup automatic -&gt; plat 2, pinyo 2
+1 1 0 0 0 0 0 0 0
+1 1 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Pup automatic -&gt; plat 2, pinyo 3 (PLAT_LIMIT)
+1 1 0 0 1 0 1 1 0
+1 1 0 C 1 1 0 X X
+# plat 2, pinyo 3 + Pup automatic -&gt; plat 2, pinyo 4 (PLAT_LIMIT)
+1 1 0 0 1 1 0 1 0
+1 1 0 C 1 1 1 X X
+# plat 2, pinyo 4 + Pup manual -&gt; plat 2, pinyo 4 (PLAT_LIMIT)
+1 0 0 0 1 1 1 1 0
+1 0 0 C 1 1 1 X X
+# plat 2, pinyo 4 + Cup -&gt; plat 2, pinyo 4 (PINYO_LIMIT)
+0 1 0 0 1 1 1 0 1
+0 1 0 C 1 1 1 X X
+# plat 2, pinyo 4 + cap boto -&gt; plat 2, pinyo 4
+0 0 0 0 1 1 1 0 0
+0 0 0 C 1 1 1 X X
+# plat 2, pinyo 4 + Pdw automatic -&gt; plat 1, pinyo 3
+1 0 1 0 1 1 1 0 0
+1 0 1 C 0 1 0 X X
+# plat 1, pinyo 3 + Pup automatic -&gt; plat 2, pinyo 4
+1 1 0 0 0 1 0 0 0
+1 1 0 C 1 1 1 X X
+# plat 2, pinyo 4 + cap boto -&gt; plat 2, pinyo 4
+0 0 0 0 1 1 1 0 0
+0 0 0 C 1 1 1 X X
+# plat 2, pinyo 4 + Cdw -&gt; plat 2, pinyo 3
+0 0 1 0 1 1 1 0 0
+0 0 1 C 1 1 0 X X
+# plat 2, pinyo 3 + Pdw manual -&gt; plat 1, pinyo 3
+0 1 1 0 1 1 0 0 0
+0 1 1 C 0 1 0 X X
+# plat 1, pinyo 3 + Cdw -&gt; plat 1, pinyo 2
+0 0 1 0 0 1 0 0 0
+0 0 1 C 0 0 1 X X
+# plat 1, pinyo 2 + cap boto -&gt; plat 1, pinyo 2
+0 0 0 0 0 0 1 0 0
+0 0 0 C 0 0 1 X X
+# plat 1, pinyo 2 + Cup -&gt; plat 1, pinyo 3
+0 1 0 0 0 0 1 0 0
+0 1 0 C 0 1 0 X X
+# plat 1, pinyo 3 + Pup manual -&gt; plat 2, pinyo 3
+1 0 0 0 0 1 0 0 0
+1 0 0 C 1 1 0 X X
+# plat 2, pinyo 3 + cap boto -&gt; plat 2, pinyo 3
+0 0 0 0 1 1 0 0 0
+0 0 0 C 1 1 0 X X
+# plat 2, pinyo 3 + cap boto -&gt; plat 2, pinyo 3
+0 0 0 0 1 1 0 0 0
+0 0 0 C 1 1 0 X X
+# plat 2, pinyo 3 + cap boto -&gt; plat 2, pinyo 3
+0 0 0 0 1 1 0 0 0
+0 0 0 C 1 1 0 X X
+# plat 2, pinyo 3 + Pup manual -&gt; plat 2, pinyo 3 (PLAT_LIMIT)
+1 0 0 0 1 1 0 1 0
+1 0 0 C 1 1 0 X X
+# plat 2, pinyo 3 + Cdw -&gt; plat 2, pinyo 2
+0 0 1 0 1 1 0 0 0
+0 0 1 C 1 0 1 X X
+# plat 2, pinyo 2 + Pup manual -&gt; plat 2, pinyo 2 (PLAT_LIMIT)
+1 0 0 0 1 0 1 1 0
+1 0 0 C 1 0 1 X X
+# plat 2, pinyo 2 + cap boto -&gt; plat 2, pinyo 2
+0 0 0 0 1 0 1 0 0
+0 0 0 C 1 0 1 X X
+# plat 2, pinyo 2 + Cup -&gt; plat 2, pinyo 3
+0 1 0 0 1 0 1 0 0
+0 1 0 C 1 1 0 X X
+# plat 2, pinyo 3 + Pup manual -&gt; plat 2, pinyo 3 (PLAT_LIMIT)
+1 0 0 0 1 1 0 1 0
+1 0 0 C 1 1 0 X X
+# plat 2, pinyo 3 + cap boto -&gt; plat 2, pinyo 3
+0 0 0 0 1 1 0 0 0
+0 0 0 C 1 1 0 X X
+# plat 2, pinyo 3 + cap boto -&gt; plat 2, pinyo 3
+0 0 0 0 1 1 0 0 0
+0 0 0 C 1 1 0 X X
+# plat 2, pinyo 3 + Pup automatic -&gt; plat 2, pinyo 4 (PLAT_LIMIT)
+1 1 0 0 1 1 0 1 0
+1 1 0 C 1 1 1 X X
+# plat 2, pinyo 4 + Cdw -&gt; plat 2, pinyo 3
+0 0 1 0 1 1 1 0 0
+0 0 1 C 1 1 0 X X
+# plat 2, pinyo 3 + Pup manual -&gt; plat 2, pinyo 3 (PLAT_LIMIT)
+1 0 0 0 1 1 0 1 0
+1 0 0 C 1 1 0 X X
+# plat 2, pinyo 3 + Pdw manual -&gt; plat 1, pinyo 3
+0 1 1 0 1 1 0 0 0
+0 1 1 C 0 1 0 X X
+# plat 1, pinyo 3 + Cdw -&gt; plat 1, pinyo 2
+0 0 1 0 0 1 0 0 0
+0 0 1 C 0 0 1 X X
+# plat 1, pinyo 2 + Pdw automatic -&gt; plat 1, pinyo 1 (PLAT_LIMIT)
+1 0 1 0 0 0 1 1 0
+1 0 1 C 0 0 0 X X
+# plat 1, pinyo 1 + Cup -&gt; plat 1, pinyo 2
+0 1 0 0 0 0 0 0 0
+0 1 0 C 0 0 1 X X
+# plat 1, pinyo 2 + Cup -&gt; plat 1, pinyo 3
+0 1 0 0 0 0 1 0 0
+0 1 0 C 0 1 0 X X
+# plat 1, pinyo 3 + Pup manual -&gt; plat 2, pinyo 3
+1 0 0 0 0 1 0 0 0
+1 0 0 C 1 1 0 X X
+# plat 2, pinyo 3 + Cup -&gt; plat 2, pinyo 4
+0 1 0 0 1 1 0 0 0
+0 1 0 C 1 1 1 X X
+# plat 2, pinyo 4 + Pdw manual -&gt; plat 1, pinyo 4
+0 1 1 0 1 1 1 0 0
+0 1 1 C 0 1 1 X X
+# plat 1, pinyo 4 + Pup manual -&gt; plat 2, pinyo 4
+1 0 0 0 0 1 1 0 0
+1 0 0 C 1 1 1 X X
+# plat 2, pinyo 4 + Pdw manual -&gt; plat 1, pinyo 4
+0 1 1 0 1 1 1 0 0
+0 1 1 C 0 1 1 X X
+# plat 1, pinyo 4 + cap boto -&gt; plat 1, pinyo 4
+0 0 0 0 0 1 1 0 0
+0 0 0 C 0 1 1 X X</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="-60" y="-60"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>

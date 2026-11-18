@@ -103,7 +103,7 @@
       <pos x="-20" y="-80"/>
     </visualElement>
     <visualElement>
-      <elementName>Out</elementName>
+      <elementName>LED</elementName>
       <elementAttributes>
         <entry>
           <string>rotation</string>
@@ -111,13 +111,13 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>CL</string>
+          <string>PINYO_LIMIT</string>
         </entry>
       </elementAttributes>
       <pos x="260" y="-200"/>
     </visualElement>
     <visualElement>
-      <elementName>Out</elementName>
+      <elementName>LED</elementName>
       <elementAttributes>
         <entry>
           <string>rotation</string>
@@ -125,7 +125,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>PL</string>
+          <string>PLAT_LIMIT</string>
         </entry>
       </elementAttributes>
       <pos x="220" y="-200"/>

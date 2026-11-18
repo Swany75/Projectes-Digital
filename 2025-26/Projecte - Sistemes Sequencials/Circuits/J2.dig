@@ -172,6 +172,75 @@
       </elementAttributes>
       <pos x="860" y="440"/>
     </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>X2 X1 X0 Q2 Q1 Q0 J2
+# Codificacio: 000 res, 001 Cdw, 010 Cup, 011 Pdw manual, 100 Pup manual, 101 Pdw auto, 110 Pup auto (111 no es dona)
+0 0 0 0 0 0 0
+0 0 0 0 0 1 0
+0 0 0 0 1 0 0
+0 0 0 0 1 1 0
+0 0 0 1 0 0 0
+0 0 0 1 0 1 0
+0 0 0 1 1 0 0
+0 0 0 1 1 1 0
+0 0 1 0 0 0 0
+0 0 1 0 0 1 0
+0 0 1 0 1 0 0
+0 0 1 0 1 1 0
+0 0 1 1 0 0 0
+0 0 1 1 0 1 0
+0 0 1 1 1 0 0
+0 0 1 1 1 1 0
+0 1 0 0 0 0 0
+0 1 0 0 0 1 0
+0 1 0 0 1 0 0
+0 1 0 0 1 1 0
+0 1 0 1 0 0 0
+0 1 0 1 0 1 0
+0 1 0 1 1 0 0
+0 1 0 1 1 1 0
+0 1 1 0 0 0 0
+0 1 1 0 0 1 0
+0 1 1 0 1 0 0
+0 1 1 0 1 1 0
+0 1 1 1 0 0 0
+0 1 1 1 0 1 0
+0 1 1 1 1 0 0
+0 1 1 1 1 1 0
+1 0 0 0 0 0 1
+1 0 0 0 0 1 1
+1 0 0 0 1 0 1
+1 0 0 0 1 1 1
+1 0 0 1 0 0 1
+1 0 0 1 0 1 1
+1 0 0 1 1 0 1
+1 0 0 1 1 1 1
+1 0 1 0 0 0 0
+1 0 1 0 0 1 0
+1 0 1 0 1 0 0
+1 0 1 0 1 1 0
+1 0 1 1 0 0 0
+1 0 1 1 0 1 0
+1 0 1 1 1 0 0
+1 0 1 1 1 1 0
+1 1 0 0 0 0 1
+1 1 0 0 0 1 1
+1 1 0 0 1 0 1
+1 1 0 0 1 1 1
+1 1 0 1 0 0 1
+1 1 0 1 0 1 1
+1 1 0 1 1 0 1
+1 1 0 1 1 1 1</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="100"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
